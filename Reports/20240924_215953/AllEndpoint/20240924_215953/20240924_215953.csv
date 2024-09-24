@@ -1,0 +1,45 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AllEndpoint,,,,24-09-2024 21:59:57,24-09-2024 22:01:23,1m - 26.117s,ERROR
+,,,,,,,
+Test Cases/8 Ping,,,,24-09-2024 21:59:57,24-09-2024 22:00:13,15.801s,PASSED
+"response = sendRequest(findTestObject(""9 Ping""))",,,,24-09-2024 21:59:57,24-09-2024 22:00:12,15.545s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,24-09-2024 22:00:12,24-09-2024 22:00:13,0.032s,PASSED
+,,,,,,,
+Test Cases/1 CreateToken,,,,24-09-2024 22:00:13,24-09-2024 22:00:14,1.592s,PASSED
+"response = sendRequest(findTestObject(""1 CreateToken""))",,,,24-09-2024 22:00:13,24-09-2024 22:00:14,1.353s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:00:14,24-09-2024 22:00:14,0.016s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:00:14,24-09-2024 22:00:14,0.054s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,24-09-2024 22:00:14,24-09-2024 22:00:14,0.014s,PASSED
+,,,,,,,
+Test Cases/2 GetBookingIds,,,,24-09-2024 22:00:58,24-09-2024 22:01:06,7.650s,PASSED
+"response = sendRequest(findTestObject(""2 GetBookingIds""))",,,,24-09-2024 22:00:59,24-09-2024 22:01:06,7.496s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:01:06,24-09-2024 22:01:06,0.001s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:01:06,24-09-2024 22:01:06,0.047s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,24-09-2024 22:01:06,24-09-2024 22:01:06,0.006s,PASSED
+,,,,,,,
+Test Cases/3 GetBooking,,,,24-09-2024 22:01:08,24-09-2024 22:01:08,0.368s,ERROR
+"response = sendRequest(findTestObject(""4 GetBooking""))",,,,24-09-2024 22:01:08,24-09-2024 22:01:08,0.323s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:01:08,24-09-2024 22:01:08,0.001s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:01:08,24-09-2024 22:01:08,0.004s,ERROR
+,,,,,,,
+Test Cases/4 CreateBooking,,,,24-09-2024 22:01:08,24-09-2024 22:01:09,0.936s,PASSED
+"postresponse = sendRequest(findTestObject(""5 CreateBooking""))",,,,24-09-2024 22:01:08,24-09-2024 22:01:09,0.837s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:01:09,24-09-2024 22:01:09,0.005s,PASSED
+result = slurper.parseText(postresponse.getResponseBodyContent()),,,,24-09-2024 22:01:09,24-09-2024 22:01:09,0.003s,PASSED
+bookingid = bookingid,,,,24-09-2024 22:01:09,24-09-2024 22:01:09,0.011s,PASSED
+assert bookingid != null,,,,24-09-2024 22:01:09,24-09-2024 22:01:09,0.004s,PASSED
+"verifyResponseStatusCode(postresponse, 200)",,,,24-09-2024 22:01:09,24-09-2024 22:01:09,0.004s,PASSED
+,,,,,,,
+Test Cases/5 UpdateBooking,,,,24-09-2024 22:01:13,24-09-2024 22:01:14,1.322s,ERROR
+"response = sendRequest(findTestObject(""6 UpdateBooking""))",,,,24-09-2024 22:01:13,24-09-2024 22:01:14,1.258s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:01:14,24-09-2024 22:01:14,0.001s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:01:14,24-09-2024 22:01:14,0.035s,ERROR
+,,,,,,,
+Test Cases/6 PartialUpdateBooking,,,,24-09-2024 22:01:18,24-09-2024 22:01:19,1.374s,ERROR
+"response = sendRequest(findTestObject(""7 PartialUpdateBooking""))",,,,24-09-2024 22:01:18,24-09-2024 22:01:19,1.340s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:01:19,24-09-2024 22:01:19,0.000s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:01:19,24-09-2024 22:01:19,0.005s,ERROR
+,,,,,,,
+Test Cases/7 DeleteBooking,,,,24-09-2024 22:01:22,24-09-2024 22:01:23,0.418s,FAILED
+"response = sendRequest(findTestObject(""8 DeleteBooking""))",,,,24-09-2024 22:01:22,24-09-2024 22:01:23,0.383s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,24-09-2024 22:01:23,24-09-2024 22:01:23,0.009s,FAILED

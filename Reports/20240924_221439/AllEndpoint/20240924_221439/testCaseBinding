@@ -1,0 +1,8 @@
+{"testCaseName":"Test Cases/8 Ping","testCaseId":"Test Cases/8 Ping","iterationVariableName":""}
+{"testCaseName":"Test Cases/1 CreateToken","testCaseId":"Test Cases/1 CreateToken","iterationVariableName":""}
+{"testCaseName":"Test Cases/2 GetBookingIds","testCaseId":"Test Cases/2 GetBookingIds","iterationVariableName":""}
+{"testCaseName":"Test Cases/3 GetBooking","testCaseId":"Test Cases/3 GetBooking","iterationVariableName":""}
+{"testCaseName":"Test Cases/4 CreateBooking","testCaseId":"Test Cases/4 CreateBooking","iterationVariableName":""}
+{"testCaseName":"Test Cases/5 UpdateBooking","testCaseId":"Test Cases/5 UpdateBooking","iterationVariableName":""}
+{"testCaseName":"Test Cases/6 PartialUpdateBooking","testCaseId":"Test Cases/6 PartialUpdateBooking","iterationVariableName":""}
+{"testCaseName":"Test Cases/7 DeleteBooking","testCaseId":"Test Cases/7 DeleteBooking","iterationVariableName":""}

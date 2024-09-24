@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AllEndpoint" time="14.37" tests="8" failures="0" errors="0">
+   <testsuite name="AllEndpoint" tests="8" failures="0" errors="0" time="14.37" skipped="0" timestamp="24-09-2024T22:23:21" hostname="nabilahalizza - nabilahs-mbp.lan" id="Test Suites/AllEndpoint">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315"/>
+         <property name="logFiles" value="/Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="nabilahalizza - nabilahs-mbp.lan"/>
+         <property name="hostAddress" value="192.168.8.179"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+      </properties>
+      <testcase name="Test Cases/8 Ping" time="5.509" classname="Test Cases/8 Ping" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:23:22 - [TEST_CASE][PASSED] - Test Cases/8 Ping: Test Cases/8 Ping
+
+24-09-2024T22:23:22 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("9 Ping")): Send request successfully
+
+24-09-2024T22:23:27 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315/requests/main/0.har
+
+24-09-2024T22:23:27 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:23:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+24-09-2024T22:23:27 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/1 CreateToken" time="5.527" classname="Test Cases/1 CreateToken" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:23:27 - [TEST_CASE][PASSED] - Test Cases/1 CreateToken: Test Cases/1 CreateToken
+
+24-09-2024T22:23:27 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("1 CreateToken")): Send request successfully
+
+24-09-2024T22:23:32 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315/requests/main/1.har
+
+24-09-2024T22:23:32 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:23:32 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:23:33 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:23:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:23:33 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/2 GetBookingIds" time="0.726" classname="Test Cases/2 GetBookingIds" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:23:33 - [TEST_CASE][PASSED] - Test Cases/2 GetBookingIds: Test Cases/2 GetBookingIds
+
+24-09-2024T22:23:33 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("2 GetBookingIds")): Send request successfully
+
+24-09-2024T22:23:33 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315/requests/main/2.har
+
+24-09-2024T22:23:33 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:23:33 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:23:33 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:23:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:23:33 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/3 GetBooking" time="0.46" classname="Test Cases/3 GetBooking" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:23:33 - [TEST_CASE][PASSED] - Test Cases/3 GetBooking: Test Cases/3 GetBooking
+
+24-09-2024T22:23:33 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("4 GetBooking")): Send request successfully
+
+24-09-2024T22:23:34 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315/requests/main/3.har
+
+24-09-2024T22:23:34 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - totalprice = totalprice: null
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - assert totalprice != null: null
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - assert totalprice == 488: null
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:23:34 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/4 CreateBooking" time="0.43" classname="Test Cases/4 CreateBooking" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:23:34 - [TEST_CASE][PASSED] - Test Cases/4 CreateBooking: Test Cases/4 CreateBooking
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("5 CreateBooking")): Send request successfully
+
+24-09-2024T22:23:34 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315/requests/main/4.har
+
+24-09-2024T22:23:34 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - bookingid = bookingid: null
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - assert bookingid != null: null
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:23:34 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5 UpdateBooking" time="0.489" classname="Test Cases/5 UpdateBooking" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:23:34 - [TEST_CASE][PASSED] - Test Cases/5 UpdateBooking: Test Cases/5 UpdateBooking
+
+24-09-2024T22:23:34 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("6 UpdateBooking")): Send request successfully
+
+24-09-2024T22:23:35 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315/requests/main/5.har
+
+24-09-2024T22:23:35 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - totalprice = totalprice: null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - assert totalprice != null: null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - assert totalprice == 111: null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:23:35 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/6 PartialUpdateBooking" time="0.558" classname="Test Cases/6 PartialUpdateBooking" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:23:35 - [TEST_CASE][PASSED] - Test Cases/6 PartialUpdateBooking: Test Cases/6 PartialUpdateBooking
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("7 PartialUpdateBooking")): Send request successfully
+
+24-09-2024T22:23:35 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315/requests/main/6.har
+
+24-09-2024T22:23:35 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - totalprice = totalprice: null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - assert totalprice != null: null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - assert totalprice == 111: null
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:23:35 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/7 DeleteBooking" time="0.437" classname="Test Cases/7 DeleteBooking" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:23:35 - [TEST_CASE][PASSED] - Test Cases/7 DeleteBooking: Test Cases/7 DeleteBooking
+
+24-09-2024T22:23:35 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("8 DeleteBooking")): Send request successfully
+
+24-09-2024T22:23:36 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_222315/AllEndpoint/20240924_222315/requests/main/7.har
+
+24-09-2024T22:23:36 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:23:36 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+24-09-2024T22:23:36 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[24-09-2024T22:23:21 - [TEST_SUITE][PASSED] - AllEndpoint: Test Cases/7 DeleteBooking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
