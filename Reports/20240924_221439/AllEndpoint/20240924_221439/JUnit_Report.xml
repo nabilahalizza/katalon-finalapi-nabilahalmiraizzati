@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AllEndpoint" time="11.473" tests="8" failures="1" errors="0">
+   <testsuite name="AllEndpoint" tests="8" failures="1" errors="0" time="11.473" skipped="0" timestamp="24-09-2024T22:14:42" hostname="nabilahalizza - nabilahs-mbp.lan" id="Test Suites/AllEndpoint">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439"/>
+         <property name="logFiles" value="/Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="nabilahalizza - nabilahs-mbp.lan"/>
+         <property name="hostAddress" value="192.168.8.179"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+      </properties>
+      <testcase name="Test Cases/8 Ping" time="2.989" classname="Test Cases/8 Ping" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:14:42 - [TEST_CASE][PASSED] - Test Cases/8 Ping: Test Cases/8 Ping
+
+24-09-2024T22:14:43 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("9 Ping")): Send request successfully
+
+24-09-2024T22:14:45 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439/requests/main/0.har
+
+24-09-2024T22:14:45 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:14:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+24-09-2024T22:14:45 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/1 CreateToken" time="0.564" classname="Test Cases/1 CreateToken" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:14:45 - [TEST_CASE][PASSED] - Test Cases/1 CreateToken: Test Cases/1 CreateToken
+
+24-09-2024T22:14:45 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("1 CreateToken")): Send request successfully
+
+24-09-2024T22:14:46 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439/requests/main/1.har
+
+24-09-2024T22:14:46 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:14:46 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:14:46 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:14:46 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:14:46 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/2 GetBookingIds" time="0.833" classname="Test Cases/2 GetBookingIds" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:14:46 - [TEST_CASE][PASSED] - Test Cases/2 GetBookingIds: Test Cases/2 GetBookingIds
+
+24-09-2024T22:14:46 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("2 GetBookingIds")): Send request successfully
+
+24-09-2024T22:14:47 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439/requests/main/2.har
+
+24-09-2024T22:14:47 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:14:47 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:14:47 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:14:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:14:47 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/3 GetBooking" time="0.324" classname="Test Cases/3 GetBooking" status="FAILED">
+         <failure type="FAILED" message="Test Cases/3 GetBooking FAILED.&#xa;Reason:&#xa;Assertion failed: &#xa;&#xa;assert totalprice == 381&#xa;       |          |&#xa;       563        false&#xa;&#xa;	at 3 GetBooking.run(3 GetBooking:27)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1727190879032.run(TempTestSuite1727190879032.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[24-09-2024T22:14:49 - [TEST_CASE][FAILED] - Test Cases/3 GetBooking: Test Cases/3 GetBooking FAILED.
+Reason:
+Assertion failed: 
+
+assert totalprice == 381
+       |          |
+       563        false
+
+	at 3 GetBooking.run(3 GetBooking:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727190879032.run(TempTestSuite1727190879032.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+24-09-2024T22:14:49 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("4 GetBooking")): Send request successfully
+
+24-09-2024T22:14:49 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439/requests/main/6.har
+
+24-09-2024T22:14:49 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:14:49 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:14:49 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:14:49 - [TEST_STEP][PASSED] - totalprice = totalprice: null
+
+24-09-2024T22:14:49 - [TEST_STEP][PASSED] - assert totalprice != null: null
+
+24-09-2024T22:14:49 - [TEST_STEP][FAILED] - assert totalprice == 381: Test Cases/3 GetBooking FAILED.
+Reason:
+Assertion failed: 
+
+assert totalprice == 381
+       |          |
+       563        false
+
+	at 3 GetBooking.run(3 GetBooking:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727190879032.run(TempTestSuite1727190879032.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+24-09-2024T22:14:49 - [MESSAGE][FAILED] - Test Cases/3 GetBooking FAILED.
+Reason:
+Assertion failed: 
+
+assert totalprice == 381
+       |          |
+       563        false
+
+	at 3 GetBooking.run(3 GetBooking:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727190879032.run(TempTestSuite1727190879032.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+         <system-err><![CDATA[24-09-2024T22:14:49 - [TEST_CASE][FAILED] - Test Cases/3 GetBooking: Test Cases/3 GetBooking FAILED.
+Reason:
+Assertion failed: 
+
+assert totalprice == 381
+       |          |
+       563        false
+
+	at 3 GetBooking.run(3 GetBooking:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727190879032.run(TempTestSuite1727190879032.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/4 CreateBooking" time="1.05" classname="Test Cases/4 CreateBooking" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:14:49 - [TEST_CASE][PASSED] - Test Cases/4 CreateBooking: Test Cases/4 CreateBooking
+
+24-09-2024T22:14:49 - [TEST_STEP][PASSED] - postresponse = sendRequest(findTestObject("5 CreateBooking")): Send request successfully
+
+24-09-2024T22:14:50 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439/requests/main/7.har
+
+24-09-2024T22:14:50 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:14:50 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:14:50 - [TEST_STEP][PASSED] - result = slurper.parseText(postresponse.getResponseBodyContent()): null
+
+24-09-2024T22:14:50 - [TEST_STEP][PASSED] - bookingid = bookingid: null
+
+24-09-2024T22:14:50 - [TEST_STEP][PASSED] - assert bookingid != null: null
+
+24-09-2024T22:14:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(postresponse, 200): Verify response status code successfully
+
+24-09-2024T22:14:50 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5 UpdateBooking" time="0.873" classname="Test Cases/5 UpdateBooking" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:14:50 - [TEST_CASE][PASSED] - Test Cases/5 UpdateBooking: Test Cases/5 UpdateBooking
+
+24-09-2024T22:14:50 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("6 UpdateBooking")): Send request successfully
+
+24-09-2024T22:14:51 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439/requests/main/8.har
+
+24-09-2024T22:14:51 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:14:51 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:14:51 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:14:51 - [TEST_STEP][PASSED] - totalprice = totalprice: null
+
+24-09-2024T22:14:51 - [TEST_STEP][PASSED] - assert totalprice != null: null
+
+24-09-2024T22:14:51 - [TEST_STEP][PASSED] - assert totalprice == 111: null
+
+24-09-2024T22:14:51 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:14:51 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/6 PartialUpdateBooking" time="1.353" classname="Test Cases/6 PartialUpdateBooking" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:14:51 - [TEST_CASE][PASSED] - Test Cases/6 PartialUpdateBooking: Test Cases/6 PartialUpdateBooking
+
+24-09-2024T22:14:51 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("7 PartialUpdateBooking")): Send request successfully
+
+24-09-2024T22:14:52 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439/requests/main/9.har
+
+24-09-2024T22:14:52 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:14:52 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+24-09-2024T22:14:52 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+24-09-2024T22:14:52 - [TEST_STEP][PASSED] - totalprice = totalprice: null
+
+24-09-2024T22:14:52 - [TEST_STEP][PASSED] - assert totalprice != null: null
+
+24-09-2024T22:14:52 - [TEST_STEP][PASSED] - assert totalprice == 111: null
+
+24-09-2024T22:14:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-09-2024T22:14:52 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/7 DeleteBooking" time="1.318" classname="Test Cases/7 DeleteBooking" status="PASSED">
+         <system-out><![CDATA[24-09-2024T22:14:52 - [TEST_CASE][PASSED] - Test Cases/7 DeleteBooking: Test Cases/7 DeleteBooking
+
+24-09-2024T22:14:52 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("8 DeleteBooking")): Send request successfully
+
+24-09-2024T22:14:54 - [MESSAGE][INFO] - HAR: /Users/nabilahalizza/git/katalon-finalapi-nabilahalmiraizzati/Reports/20240924_221439/AllEndpoint/20240924_221439/requests/main/10.har
+
+24-09-2024T22:14:54 - [MESSAGE][PASSED] - Send request successfully
+
+24-09-2024T22:14:54 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+24-09-2024T22:14:54 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[24-09-2024T22:14:42 - [TEST_SUITE][FAILED] - AllEndpoint: Test Cases/3 GetBooking FAILED.
+Reason:
+Assertion failed: 
+
+assert totalprice == 381
+       |          |
+       563        false
+
+	at 3 GetBooking.run(3 GetBooking:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727190879032.run(TempTestSuite1727190879032.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[24-09-2024T22:14:42 - [TEST_SUITE][FAILED] - AllEndpoint: Test Cases/3 GetBooking FAILED.
+Reason:
+Assertion failed: 
+
+assert totalprice == 381
+       |          |
+       563        false
+
+	at 3 GetBooking.run(3 GetBooking:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727190879032.run(TempTestSuite1727190879032.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>

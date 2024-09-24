@@ -1,0 +1,56 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AllEndpoint,,,,24-09-2024 22:14:42,24-09-2024 22:14:54,11.473s,FAILED
+,,,,,,,
+Test Cases/8 Ping,,,,24-09-2024 22:14:42,24-09-2024 22:14:45,2.989s,PASSED
+"response = sendRequest(findTestObject(""9 Ping""))",,,,24-09-2024 22:14:43,24-09-2024 22:14:45,2.732s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,24-09-2024 22:14:45,24-09-2024 22:14:45,0.027s,PASSED
+,,,,,,,
+Test Cases/1 CreateToken,,,,24-09-2024 22:14:45,24-09-2024 22:14:46,0.564s,PASSED
+"response = sendRequest(findTestObject(""1 CreateToken""))",,,,24-09-2024 22:14:45,24-09-2024 22:14:46,0.407s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:14:46,24-09-2024 22:14:46,0.014s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:14:46,24-09-2024 22:14:46,0.025s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,24-09-2024 22:14:46,24-09-2024 22:14:46,0.006s,PASSED
+,,,,,,,
+Test Cases/2 GetBookingIds,,,,24-09-2024 22:14:46,24-09-2024 22:14:47,0.833s,PASSED
+"response = sendRequest(findTestObject(""2 GetBookingIds""))",,,,24-09-2024 22:14:46,24-09-2024 22:14:47,0.734s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:14:47,24-09-2024 22:14:47,0.004s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:14:47,24-09-2024 22:14:47,0.012s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,24-09-2024 22:14:47,24-09-2024 22:14:47,0.004s,PASSED
+,,,,,,,
+Test Cases/3 GetBooking,,,,24-09-2024 22:14:49,24-09-2024 22:14:49,0.324s,FAILED
+"response = sendRequest(findTestObject(""4 GetBooking""))",,,,24-09-2024 22:14:49,24-09-2024 22:14:49,0.301s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:14:49,24-09-2024 22:14:49,0.000s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:14:49,24-09-2024 22:14:49,0.001s,PASSED
+totalprice = totalprice,,,,24-09-2024 22:14:49,24-09-2024 22:14:49,0.001s,PASSED
+assert totalprice != null,,,,24-09-2024 22:14:49,24-09-2024 22:14:49,0.000s,PASSED
+assert totalprice == 381,,,,24-09-2024 22:14:49,24-09-2024 22:14:49,0.002s,FAILED
+,,,,,,,
+Test Cases/4 CreateBooking,,,,24-09-2024 22:14:49,24-09-2024 22:14:50,1.050s,PASSED
+"postresponse = sendRequest(findTestObject(""5 CreateBooking""))",,,,24-09-2024 22:14:49,24-09-2024 22:14:50,0.989s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:14:50,24-09-2024 22:14:50,0.002s,PASSED
+result = slurper.parseText(postresponse.getResponseBodyContent()),,,,24-09-2024 22:14:50,24-09-2024 22:14:50,0.003s,PASSED
+bookingid = bookingid,,,,24-09-2024 22:14:50,24-09-2024 22:14:50,0.004s,PASSED
+assert bookingid != null,,,,24-09-2024 22:14:50,24-09-2024 22:14:50,0.002s,PASSED
+"verifyResponseStatusCode(postresponse, 200)",,,,24-09-2024 22:14:50,24-09-2024 22:14:50,0.003s,PASSED
+,,,,,,,
+Test Cases/5 UpdateBooking,,,,24-09-2024 22:14:50,24-09-2024 22:14:51,0.873s,PASSED
+"response = sendRequest(findTestObject(""6 UpdateBooking""))",,,,24-09-2024 22:14:50,24-09-2024 22:14:51,0.791s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:14:51,24-09-2024 22:14:51,0.003s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:14:51,24-09-2024 22:14:51,0.002s,PASSED
+totalprice = totalprice,,,,24-09-2024 22:14:51,24-09-2024 22:14:51,0.002s,PASSED
+assert totalprice != null,,,,24-09-2024 22:14:51,24-09-2024 22:14:51,0.003s,PASSED
+assert totalprice == 111,,,,24-09-2024 22:14:51,24-09-2024 22:14:51,0.002s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,24-09-2024 22:14:51,24-09-2024 22:14:51,0.003s,PASSED
+,,,,,,,
+Test Cases/6 PartialUpdateBooking,,,,24-09-2024 22:14:51,24-09-2024 22:14:52,1.353s,PASSED
+"response = sendRequest(findTestObject(""7 PartialUpdateBooking""))",,,,24-09-2024 22:14:51,24-09-2024 22:14:52,1.258s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,24-09-2024 22:14:52,24-09-2024 22:14:52,0.005s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,24-09-2024 22:14:52,24-09-2024 22:14:52,0.002s,PASSED
+totalprice = totalprice,,,,24-09-2024 22:14:52,24-09-2024 22:14:52,0.002s,PASSED
+assert totalprice != null,,,,24-09-2024 22:14:52,24-09-2024 22:14:52,0.003s,PASSED
+assert totalprice == 111,,,,24-09-2024 22:14:52,24-09-2024 22:14:52,0.002s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,24-09-2024 22:14:52,24-09-2024 22:14:52,0.005s,PASSED
+,,,,,,,
+Test Cases/7 DeleteBooking,,,,24-09-2024 22:14:52,24-09-2024 22:14:54,1.318s,PASSED
+"response = sendRequest(findTestObject(""8 DeleteBooking""))",,,,24-09-2024 22:14:52,24-09-2024 22:14:54,1.252s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,24-09-2024 22:14:54,24-09-2024 22:14:54,0.003s,PASSED
